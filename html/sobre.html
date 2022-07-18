@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<style>
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+
+table td{ 
+  vertical-align: top; 
+  padding: 5px;
+  word-break: break-all;  /* MUST ADD THIS */
+  overflow-wrap: break-word;
+}
+
+.grid-layout{
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 33%;
+  justify-content: stretch;
+}
+
+.grid-layout2 {
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 149px 17% auto;
+  grid-template-rows: 33%;
+  justify-content: stretch;
+  margin-left: -91px;
+
+}
+
+.caja{
+  border-width: 1px;
+  width: 617px;
+  height: 128px;
+  text-align: center;
+}
+
+.grid-layout-caja-principal1{
+  margin: 0 auto;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 100%;
+  justify-content: stretch;
+}
+
+/* Caja de arriba a la izquierda, solo mireme y no me toque  */
+ .caja-correo {
+  border-width: 1px;
+  border: 1px solid black;
+  width: 119px;
+  height: 41px;
+  text-align: center;
+}
+.caja-correo-1{
+  grid-row: 1/2;
+  height: 81px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  width: 57px;
+  margin-block-end: 93px;
+}
+.caja-correo-1 p{
+  font-size: 9px;
+  margin-block-start: 7px;
+}
+.caja-correo-2 p{
+  font-size: 15px;
+}
+.caja-correo-3{
+  grid-column: 2/2;
+}
+.caja-correo-3 p{
+  font-size: 15px;
+}
+
+.segunda-caja{
+  border-width: 1px;
+  border: 1px solid black;
+  width: 52px;
+  height: 31px;
+  text-align: center;
+  margin-top: 20px;
+}
+.segunda-caja p{
+   margin: 0px;
+}
+
+.tercera-caja{
+  margin-top: 17px;
+  margin-right: 181px;
+}
+
+.tercera-caja .p2{
+  margin: 30px;
+  font-size: 29px;
+}
+
+.caja-principal3{
+  padding: 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100%;
+    justify-content: inherit;
+}
+
+p{
+  margin: -2px;
+}
+
+.caja-principal2 p{
+  display: flex;
+  margin-left: 23px;
+  margin-top: 6px;
+}
+
+img{
+  height: 60px;
+  margin-left: 23px;
+}
+
+</style>
+<body>
+
+<body>
+
+ <div class="grid-layout">
+    <div class="caja caja-principal1">
+      
+      <div class="grid-layout-caja-principal1">
+        <div class="grid-layout2">
+          <div class="caja-correo caja-correo-1">
+            <p>CORREO OFICIAL DE LA REPUBLICA ARGENTINA S.A.</p>
+          </div>
+          <div class="caja-correo caja-correo-2">
+            <p>Franco a</p>
+            <p>pagar</p>
+          </div>
+          <div class="caja-correo caja-correo-3">
+            <p>Cuenta n°</p>
+            <p>11002</p>
+          </div>
+        </div>
+        <div class="segunda-caja">
+          <p>00</p>
+        </div>
+        <div class="tercera-caja">
+          <p class="p1">220502D0214</p>
+          <p class="p2">90044D</p>
+        </div>
+      </div>
+        
+      
+    </div>
+    <div class="caja caja-principal2">
+      <p>ALTAMIRANDA MARTINIANO</p>
+      <p>MZA V CASA 11</p>
+      <p>4000 SAN MIGUEL DE TUCUMÁN</p>
+      <p>TUCUMÁN</p>
+    </div>
+    <div class="caja caja-principal3">
+      <img src="unnamed.png" alt="">
+    </div>
+  </div>
+
+
+  
+
+
+
+</body>
+</html>
